@@ -91,10 +91,10 @@ Os conjuntos completos estão disponíveis via **links públicos** (Google Drive
 
 ## 📄 Parte 2 – Dados textuais (NLP)
 
-Mínimo dois textos (.txt) sobre doenças cardíacas ou saúde cardiovascular (fontes: SciELO, BVS, SUS, Projeto Gutenberg). Os arquivos ficam em `docs/`. No README, descrever fonte de cada texto e como podem ser usados em NLP (extração de sintomas, classificação de tópicos, sumarização) e por que isso é relevante para o CardioIA.
+**Objetivo:** textos (.txt) sobre doenças cardíacas ou saúde cardiovascular (fontes: SciELO, BVS, SUS, Projeto Gutenberg). Os arquivos ficam em `docs/`. No README, descrever fonte de cada texto e como podem ser usados em NLP (extração de sintomas, classificação de tópicos, sumarização) e por que isso é relevante para o CardioIA.
+**Documentos:** arquivos .txt em `docs/`
 
-- **Link (se aplicável):** [pasta no Drive ou indicar: "Arquivos em `docs/`"]
-- *(Seção a ser preenchida pela equipe responsável.)*
+
 
 ---
 
