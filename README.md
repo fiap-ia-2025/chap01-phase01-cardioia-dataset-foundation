@@ -91,10 +91,39 @@ Os conjuntos completos estão disponíveis via **links públicos** (Google Drive
 
 ## 📄 Parte 2 – Dados textuais (NLP)
 
-**Objetivo:** textos (.txt) sobre doenças cardíacas ou saúde cardiovascular (fontes: SciELO, BVS, SUS, Projeto Gutenberg). Os arquivos ficam em `docs/`. No README, descrever fonte de cada texto e como podem ser usados em NLP (extração de sintomas, classificação de tópicos, sumarização) e por que isso é relevante para o CardioIA.
+**Objetivo:** textos (.txt) sobre doenças cardíacas ou saúde cardiovascular, como podem ser usados em NLP e por que isso é relevante para o CardioIA.
+
 **Documentos:** arquivos .txt em `docs/`
 
+### Possíveis aplicações de NLP
+- **Extração de sintomas:** os algoritmos de NLP podem identificar sintomas mencionados nos textos, como dor no peito, fadiga, tontura e falta de ar e transformá-las em variáveis estruturadas equivalentes às utilizadas no dataset.
+- **Classificação de risco cardiovascular:** os textos podem classificar em categorias como: fatores de risco, sintomas, diagnóstico e tratamento a fim de identificar padrões clínicos.
+- **Integração com modelo Machine Learning:** os dados dos textos podem ser convertidos em variáveis numéricas semelhantes ao dataset para alimentar um modelo de ML capaz de prever a presença de doença cardíaca.
 
+### Governança de dados
+- **Qualidade e confiabilidade:** textos obtidos por instituições reconhecidadas: Organização Mundial da Saúde e Ministério da Saúde.
+- **Privacidade dos dados:** os textos são informativos públicos e portanto não contém dados pessoais e registros clínicos.
+
+### Conexão com Dataset
+Os textos coletados neste repositório foram selecionados a partir de fontes institucionais confiáveis e abordam sintomas, fatores de risco e características clínicas de doenças cardiovasculares. Esses conteúdos apresentam termos médicos que correspondem a variáveis presentes no dataset.
+
+Técnicas de **Processamento de Linguagem Natural (NLP)** podem ser utilizadas para extrair essas informações de textos médicos não estruturados e transformá-las em variáveis estruturadas semelhantes às utilizadas no dataset.
+
+| Informação presente nos textos | Variável no dataset Cleveland | Descrição |
+|---|---|---|
+| idade do paciente | age | Idade em anos |
+| sexo | sex | Sexo biológico do paciente |
+| dor ou desconforto no peito | cp | Tipo de dor no peito |
+| pressão arterial elevada | trestbps | Pressão arterial em repouso |
+| colesterol elevado | chol | Nível de colesterol no sangue |
+| sintomas durante esforço físico | exang | Angina induzida por exercício |
+| frequência cardíaca | thalach | Capacidade funcional; fortemente associado ao target na EDA. |
+
+### Fontes de dados
+
+1. [Organização Mundial da Saúde – Doenças Cardiovasculares](https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds))
+
+2. [Ministério da Saúde – Infarto Agudo do Miocárdio](https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/i/infarto)
 
 ---
 
