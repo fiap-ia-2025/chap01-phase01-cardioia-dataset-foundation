@@ -59,7 +59,7 @@ Os conjuntos completos estão disponíveis via **links públicos** (Google Drive
 
 ### 🔗 Link para o dataset completo
 
-- [Inserir link público – Google Drive / OneDrive] *(subir o arquivo `heart_real_cleaned.csv` e colar o link aqui)*
+- O conjunto de dados processado está disponível na pasta [data/heart_real_cleaned.csv](./data/heart_real_cleaned.csv) deste repositório.
 
 **Como reproduzir a limpeza (Parte 1):** na raiz do repositório, com o ambiente ativado (`pip install -r requirements.txt`), executar `python scripts/clean_heart_data.py`. O script lê `data/heart_disease_cleveland_raw.csv` e gera `data/heart_real_cleaned.csv`.
 
