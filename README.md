@@ -6,7 +6,7 @@
   </a>
 </p>
 
-## 👥 Grupo [Número]
+## 👥 Grupo 80
 
 ## 👨‍🎓 Integrantes
 
