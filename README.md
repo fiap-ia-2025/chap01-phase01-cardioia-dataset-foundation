@@ -129,10 +129,109 @@ Técnicas de **Processamento de Linguagem Natural (NLP)** podem ser utilizadas p
 
 ## 🖼️ Parte 3 – Dados visuais (Visão computacional)
 
-Mínimo 100 imagens (.jpg ou .png) de um tipo de exame cardiológico (ECG, raio-X de tórax ou angiograma). Incluir link público (Google Drive/OneDrive) e explicar brevemente como as imagens podem ser usadas em VC (detecção de padrões, bordas, anomalias) e a importância para o CardioIA.
+Este segmento apresenta um conjunto de **140 imagens de Eletrocardiograma (ECG)** utilizadas para fins educacionais e de estudo na aplicação de técnicas de **Visão Computacional** e **Inteligência Artificial** na área da saúde.
 
-- **Link para as imagens:** [Inserir link público]
-- *(Seção a ser preenchida pela equipe responsável.)*
+O objetivo deste dataset é demonstrar como algoritmos de análise de imagens podem identificar padrões presentes em exames cardiológicos e auxiliar no desenvolvimento de sistemas inteligentes para análise médica.
+
+---
+
+### 📂 Acesso ao Dataset
+
+As imagens utilizadas neste projeto estão hospedadas em um repositório externo para facilitar o acesso e download.
+
+**Link para acesso ao dataset:**  
+*https://drive.google.com/drive/folders/1Db4h6M2dsE2K_kz8VsePKqeUYzokrxdY*
+
+Todas as imagens estão organizadas em uma única pasta contendo registros de ECG de diferentes condições cardíacas.
+
+---
+
+### 📊 Descrição do Dataset
+
+O conjunto de dados contém **140 imagens de ECG**, divididas igualmente em quatro categorias que representam diferentes condições cardíacas. Cada categoria foi identificada por uma sigla para facilitar a organização e análise dos dados.
+
+| Sigla | Categoria | Descrição | Quantidade |
+|------|------|------|------|
+| **MI** | Myocardial Infarction | ECG de pacientes diagnosticados com infarto do miocárdio | 35 |
+| **HB** | Abnormal Heartbeat | ECG de pacientes com batimentos cardíacos anormais ou arritmias | 35 |
+| **NO** | Normal | ECG de indivíduos com atividade cardíaca considerada normal | 35 |
+| **PMI** | Previous Myocardial Infarction | ECG de pacientes com histórico prévio de infarto do miocárdio | 35 |
+
+**Total de imagens:** 140
+
+Essa organização permite que os dados sejam utilizados em experimentos de classificação de imagens e análise automática de padrões cardíacos.
+
+---
+
+### 🤖 Aplicação de Visão Computacional
+
+As imagens de **Eletrocardiograma (ECG)** presentes neste dataset podem ser analisadas por algoritmos de **Visão Computacional** com o objetivo de identificar padrões relacionados à atividade elétrica do coração. O ECG representa graficamente os sinais elétricos cardíacos por meio de ondas características (P, QRS e T), que refletem diferentes etapas do ciclo cardíaco. Alterações na forma, amplitude ou intervalo dessas ondas podem indicar diversas condições cardiovasculares.
+
+A partir dessas imagens, técnicas de processamento e análise de imagens podem ser aplicadas para extrair informações relevantes e auxiliar na identificação de possíveis anomalias cardíacas. Entre as principais abordagens utilizadas estão:
+
+### Detecção de bordas
+
+Algoritmos de detecção de bordas podem identificar os contornos das ondas presentes no traçado do ECG. Essa técnica permite destacar as transições entre diferentes regiões da imagem, facilitando a identificação das ondas características do exame. A partir disso, é possível analisar a morfologia das ondas e detectar variações associadas a determinadas condições cardíacas.
+
+### Extração de características
+
+Após a identificação das principais estruturas do ECG, algoritmos de **extração de características** podem ser utilizados para capturar informações relevantes do sinal. Essas características podem incluir:
+
+- amplitude das ondas
+- duração dos intervalos entre batimentos
+- variações no formato do complexo QRS
+- padrões de repetição no ritmo cardíaco
+
+Esses atributos podem ser utilizados como entrada para modelos de aprendizado de máquina que buscam diferenciar sinais cardíacos normais de sinais associados a doenças cardiovasculares.
+
+### Reconhecimento de padrões
+
+Outra aplicação importante da Visão Computacional é o **reconhecimento automático de padrões**. Por meio da análise de múltiplos exemplos de ECG, algoritmos podem aprender a identificar padrões característicos associados a determinadas condições clínicas, como alterações no ritmo cardíaco ou evidências de infarto do miocárdio.
+
+Esse tipo de abordagem permite que sistemas computacionais identifiquem semelhanças entre novos exames e padrões previamente aprendidos durante o treinamento do modelo.
+
+### Classificação com aprendizado profundo
+
+Modelos baseados em **Redes Neurais Convolucionais (CNN)** podem ser utilizados para realizar a classificação automática das imagens do dataset nas diferentes categorias (MI, HB, NO e PMI). Essas redes são especialmente eficientes na análise de imagens, pois conseguem aprender automaticamente padrões visuais complexos sem a necessidade de extração manual de características.
+
+Durante o processo de treinamento, o modelo aprende a identificar diferenças sutis entre ECGs normais e ECGs associados a condições cardíacas específicas, permitindo posteriormente classificar novos exames de forma automatizada.
+
+---
+
+### 🧠 Importância para Projetos de Inteligência Artificial na Saúde
+
+A aplicação de técnicas de **Inteligência Artificial** e **Visão Computacional** na análise de exames cardiológicos possui grande potencial para transformar a forma como doenças cardiovasculares são diagnosticadas e monitoradas.
+
+Doenças cardíacas estão entre as principais causas de morte no mundo, e a interpretação de exames como o ECG exige conhecimento especializado e análise cuidadosa por parte de profissionais de saúde. Nesse contexto, sistemas baseados em IA podem atuar como ferramentas de apoio ao diagnóstico, auxiliando médicos na identificação de padrões anormais nos exames.
+
+Entre os principais benefícios do uso dessas tecnologias estão:
+
+- **Detecção precoce de doenças cardiovasculares**, permitindo intervenções médicas mais rápidas  
+- **Automatização da análise de exames**, reduzindo o tempo necessário para avaliação clínica  
+- **Apoio à tomada de decisão médica**, oferecendo uma segunda análise baseada em dados  
+- **Redução de erros humanos**, principalmente em ambientes com grande volume de exames  
+- **Possibilidade de triagem automática**, identificando rapidamente exames que requerem atenção médica imediata  
+
+Além disso, o desenvolvimento de modelos de IA treinados com dados como os presentes neste dataset pode contribuir para a criação de sistemas de **diagnóstico assistido por computador (Computer-Aided Diagnosis – CAD)**. Esses sistemas são cada vez mais utilizados em diversas áreas da medicina para auxiliar na interpretação de exames médicos.
+
+Portanto, a análise de imagens de ECG por meio de técnicas de Visão Computacional representa uma abordagem promissora para o desenvolvimento de soluções tecnológicas capazes de melhorar a eficiência, a precisão e a acessibilidade do diagnóstico de doenças cardiovasculares.
+
+---
+
+### 📚 Fonte dos Dados
+
+As imagens utilizadas neste projeto foram obtidas a partir do dataset público **ECG Images Dataset of Cardiac Patients**, disponível na plataforma **Mendeley Data**.
+
+O dataset foi desenvolvido para apoiar pesquisas relacionadas à análise de doenças cardiovasculares por meio de técnicas de aprendizado de máquina e processamento de sinais cardíacos.
+
+**Fonte original do dataset:**  
+https://data.mendeley.com/datasets/gwbz3fsgp8/2
+
+**Autores do dataset:**
+- Ali Haider Khan  
+- Muzammil Hussain  
+
+**Licença:** Creative Commons Attribution 4.0 (CC BY 4.0)
 
 ---
 
